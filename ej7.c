@@ -1,4 +1,4 @@
-//x (op) m = Z
+// Solo usar |, ^
 //Con bis, la modificación consiste en establecer “Z” a 1 en
 //cada posición donde “m” es 1.
 //x bis m = Z
@@ -12,7 +12,7 @@ int bis(int x, int m){
 //x bic 1 = 0
 int bic(int x, int m){
 
-  return 0;
+  return (x|m)^m;
 }
 /* Calcular x|y usando solo llamadas a las funciones bis y bic */
 int bool_or(int x, int y) {
