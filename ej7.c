@@ -21,7 +21,7 @@ int bool_or(int x, int y) {
 }
 /* Calcula x^y usando solo llamadas a las funciones bis y bic */
 int bool_xor(int x, int y) {
-  int resultado = __________;
+  int resultado = bic(x,y);
   return resultado;
 }
 int mult_ok(int x, int y) {
