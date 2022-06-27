@@ -34,7 +34,9 @@ int mult_ok(int x, int y) {
 }
 int main (){
   int x = 12;
-  int y = 1;
+  int y = 4;
 
-  printf("%d\n",bool_or(x,y));
+  printf("%d\n",bool_or(x,y)); //12
+  printf("%d\n",bool_xor(x,y)); //8
+                               //
 }
