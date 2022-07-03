@@ -159,7 +159,7 @@ int bitXor(int x, int y) {
 // 1 es:
 // 0000000000000000 0000000000000001
 int tmin(void) {
-  return 1>>31;
+  return 1<<31;
 }
 // 2
 /*
