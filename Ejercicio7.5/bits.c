@@ -156,9 +156,11 @@ int bitXor(int x, int y) {
  */
 // como estamos trabajndo en 32 bits el Tmin es
 // 1000000000000000 0000000000000000
+// 1 es:
+// 0000000000000000 0000000000000001
 int tmin(void) {
 
-    return 2;
+   return 0x80000000;
 
 }
 //2
