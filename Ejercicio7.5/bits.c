@@ -135,28 +135,30 @@ NOTES:
 
 #endif
 //1
-/* 
- * bitXor - x^y using only ~ and & 
+/*
+ * bitXor - x^y using only ~ and &
  *   Example: bitXor(4, 5) = 1
  *   Legal ops: ~ &
  *   Max ops: 14
  *   Rating: 1
  */
 int bitXor(int x, int y) {
-       int a = ~(x&y);
-       int b = ~(~x&~y);
+    int a = ~(x&y);
+    int b = ~(~x&~y);
 
-       return a&b;
+    return a&b;
 }
-/* 
- * tmin - return minimum two's complement integer 
+/*
+ * tmin - return minimum two's complement integer
  *   Legal ops: ! ~ & ^ | + << >>
  *   Max ops: 4
  *   Rating: 1
  */
+// como estamos trabajndo en 32 bits el Tmin es
+// 1000000000000000 0000000000000000
 int tmin(void) {
 
-  return 2;
+    return 2;
 
 }
 //2
@@ -168,7 +170,8 @@ int tmin(void) {
  *   Rating: 1
  */
 int isTmax(int x) {
-  return 2;
+
+    return 2;
 }
 /* 
  * allOddBits - return 1 if all odd-numbered bits in word set to 1
