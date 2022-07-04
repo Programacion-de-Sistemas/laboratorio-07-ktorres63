@@ -212,7 +212,9 @@ int negate(int x) {
  *   Max ops: 15
  *   Rating: 3
  */
-int isAsciiDigit(int x) { return 2; }
+int isAsciiDigit(int x) {
+    return 2;
+}
 /*
  * conditional - same as x ? y : z
  *   Example: conditional(2,4,5) = 4
@@ -220,7 +222,9 @@ int isAsciiDigit(int x) { return 2; }
  *   Max ops: 16
  *   Rating: 3
  */
-int conditional(int x, int y, int z) { return 2; }
+int conditional(int x, int y, int z) {
+    return 2;
+}
 /*
  * isLessOrEqual - if x <= y  then return 1, else return 0
  *   Example: isLessOrEqual(4,5) = 1.
@@ -228,7 +232,9 @@ int conditional(int x, int y, int z) { return 2; }
  *   Max ops: 24
  *   Rating: 3
  */
-int isLessOrEqual(int x, int y) { return 2; }
+int isLessOrEqual(int x, int y) {
+    return 2;
+}
 // 4
 /*
  * logicalNeg - implement the ! operator, using all of
@@ -238,7 +244,9 @@ int isLessOrEqual(int x, int y) { return 2; }
  *   Max ops: 12
  *   Rating: 4
  */
-int logicalNeg(int x) { return 2; }
+int logicalNeg(int x) {
+    return 2;
+}
 /* howManyBits - return the minimum number of bits required to represent x in
  *             two's complement
  *  Examples: howManyBits(12) = 5
