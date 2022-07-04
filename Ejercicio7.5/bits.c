@@ -197,8 +197,9 @@ int allOddBits(int x) {
  *   Max ops: 5
  *   Rating: 2
  */
+// con resta se resolveria
 int negate(int x) {
-    int test = x^1;
+    int test = (x-1);
     return ~test;
 }
 // 3
