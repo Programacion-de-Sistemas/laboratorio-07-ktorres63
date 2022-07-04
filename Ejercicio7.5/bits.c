@@ -173,10 +173,10 @@ int tmin(void) {
 //T min = Tmax+1
 int isTmax(int x) {
     int tmin = x+1;
-    int test = x&(~tmin);
-    int test2 = ~test;
+    int test = x^(!tmin);
+    int test2 = test^tmin;
 
-    return !(!test2);
+    return !(~(test2));
 
 }
 /*
