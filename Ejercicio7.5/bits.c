@@ -198,9 +198,10 @@ int allOddBits(int x) {
  *   Rating: 2
  */
 // con resta se resolveria
+// ~(x-1)
 int negate(int x) {
-    int test = (x-1);
-    return ~test;
+    int test = ~x;
+    return test+1;
 }
 // 3
 /*
