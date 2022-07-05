@@ -222,6 +222,8 @@ int isAsciiDigit(int x) {
  *   Max ops: 16
  *   Rating: 3
  */
+ //como trabajo con ints siempre deberia dar true osea
+ //siempre ser y la rspta;
 int conditional(int x, int y, int z) {
     return 2;
 }
@@ -245,7 +247,11 @@ int isLessOrEqual(int x, int y) {
  *   Rating: 4
  */
 int logicalNeg(int x) {
-    return 2;
+    int tmin = 1<<31;
+    int tmax = ~tmin;
+    int test = x + tmax;
+
+    return ~(test >>31);
 }
 /* howManyBits - return the minimum number of bits required to represent x in
  *             two's complement
