@@ -246,12 +246,10 @@ int isLessOrEqual(int x, int y) {
  *   Max ops: 12
  *   Rating: 4
  */
-int logicalNeg(int x) {
-    int tmin = 1<<31;
-    int tmax = ~tmin;
-    int test = x + tmax;
-
-    return ~(test >>31);
+int logicalNeg(int x) {// si x=0
+    int test = ~x+1; // 0000 vuelve a dar 0
+    int test2 = ~test & ~x;
+    return test1 >>31;
 }
 /* howManyBits - return the minimum number of bits required to represent x in
  *             two's complement
